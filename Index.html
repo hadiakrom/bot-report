@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./js/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>The Prime - monster hunter report</title>
+  </head>
+  <body class="bg-dark2 ">
+     
+    <!-- page header -->
+    <div class="container min-vw-100 pt-3 m-0 bg-grey text-bold title">
+      The Prime
+    </div>
+  <div class="container sticky-top min-vw-100 bg-grey">
+     
+     <ul class="nav justify-content-center sticky-top" id="pills-tab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+         </li>
+        <li class="nav-item">
+          <a class="nav-link active" id="pills-report-tab" data-toggle="pill" href="#pills-report" role="tab" aria-controls="pills-report" aria-selected="false">Report</a>
+          </li>
+        <li class="nav-item">
+           <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Details</a>
+          </li>
+       </ul>
+    </div>
+  
+  <!-- page content -->
+  <div class="container bg-dark2 min-vh-100">
+    <br>
+    <div class="tab-content " id="pills-tabContent">
+      <!-- Page 1 - Content -->
+      <div class="tab-pane fade " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+      	<div class="container bg-transparent mx-auto p-2 w-100 h-100">
+         	<Table className="bg-transparent text-light mx-auto px-5 w-100">
+        	  <thead>
+          		<tr><th class="text-center">BOT COMMANDS</th></tr>
+      	    </thead>
+      	    <tbody>
+      	      <tr><td class="py-0">
+      		      <p class="m-0"><code>!bal</code></p>
+      		      <p class="m-0">check your balance on Bank</p>
+              </td></tr>
+      	      <tr><td class="py-0">
+      		      <p class="m-0"><code>!stats</code></p>
+      		      <p class="m-0">check your today monster hunt</p>
+              </td></tr>
+      	      <tr><td class="py-0">
+      		      <p class="m-0"><code>!stats all</code></p>
+      		      <p class="m-0">retrieve today guild boxes</p>
+              </td></tr>
+              <tr><td class="py-0">
+      		      <p class="m-0"><code>![type rss][amount]</code></p>
+      		      <p class="m-0">request [food][stone][wood][ore][gold] from Bank</p>
+      		      <p class="m-0"><i>example :</i></p>
+      		      <p class="px-3 m-0"><code>!food 5M</code> (request 5M foods from Bank)</p>
+      		      <p class="px-3 m-0"><code>!stone 5M</code> (request 5M foods from Bank)</p>
+      		      <p class="px-3 m-0"><code>!wood 5M</code> (request 5M foods from Bank)</p>
+      		      <p class="px-3 m-0"><code>!ore 5M</code> (request 5M foods from Bank)</p>
+      		      <p class="px-3 m-0"><code>!gold 5M</code> (request 5M foods from Bank)</p>
+      	       </td></tr>
+      
+      	  </tbody>
+      	</Table>
+      	</div>
+      </div><!-- End of Page1 Content-->
+      <!-- Page 2 - Content -->   
+      <div class="tab-pane fade show active" id="pills-report" role="tabpanel" aria-labelledby="pills-report-tab">
+         <ul class="list-group list-group-flush">
+            <li class="list-group-item ">
+              <div class="val_total_boxes" >0</div>
+              <br>
+            </li>
+            
+            <li class="list-group-item">
+               <p class="mb-1">Hunting Date </p>
+               <p class="val_hunting_date text-bold nopadding">loading</p>
+            </li>
+            <li class="list-group-item">
+               <p class="mb-1">Top Score</p>
+               <div class="d-flex justify-content-between align-items-center" >
+                  <p class="nopadding text-bold val_hunter_name">loading</p>
+                  <span class="badge badge-success badge-pills val_hunting_score">0</span>
+               </div>
+            </li>
+            <li class="list-group-item ">
+                  <p class="mb-1">Total Monster Boxes</p>
+               <div class="d-flex justify-content-between align-items-center" >
+                  <p class="nopadding text-bold val_monster_box">0</p>
+                  <span class="badge badge-pills val_monster_score">0</span>
+               </div>
+            </li>
+            <li class="list-group-item ">
+                  <p class="mb-1">Total Purchased Boxes</p>
+               <div class="d-flex justify-content-between align-items-center" >
+                  <p class="nopadding text-bold val_purchased_box">0</p>
+                  <span class="badge badge-pills val_purchased_score">0</span>
+               </div>
+            </li>
+         </ul>
+         
+         
+      </div><!-- End of Page2 Content -->
+      <!-- Page -3-->
+      <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+        <div class="container page-contact" >
+          Page 3 - Coming Soon
+        </div>
+      </div>
+  </div>
+</div> 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- custom script -->
+    <!-- get report data from database -->
+    
+    <script lang="text/JavaScript" src="./js/jquery-3.3.1.slim.min.js"></script> 
+    <script lang="text/JavaScript" src="./js/popper.min.js"></script> 
+    <script lang="text/JavaScript" src="./js/bootstrap.min.js"></script> 
+    <script lang="text/JavaScript" src="./js/moment.min.js"></script> 
+    <script lang="text/JavaScript" src="./js/function.js"></script> 
+    
+  </body>
+</html>
